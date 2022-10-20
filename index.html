@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>Conference</title>
+</head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+
+overflow-x: hidden;
+
+}
+* {box-sizing: border-box;
+
+}
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #282936 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #282936;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+.container {
+ 
+  margin: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+.text {
+
+
+
+ margin-left: 6%;
+  
+  width: 100%;
+
+  text-align: center;
+
+}
+.text h1,h2{
+  font-size: 1.4em;
+  text-align: center;
+
+
+}
+
+
+
+
+
+.content_1{
+  margin-top: 2%;
+
+  text-align: center;
+ text-align: justify;
+  text-justify: inter-word;
+}
+.content_1 p{
+  margin-top: 2%;
+  padding: 0 15%;
+  font-size: 1em;
+}
+
+.content_1 h1{
+  text-align: center;
+  text-decoration:underline ;
+}
+.content_2{
+  margin-top: 4%;
+
+  text-align: center;
+text-align: justify;
+  text-justify: inter-word;
+}
+#highlight{
+  margin-top:2% ;
+  text-align: left;
+  color: white;
+  padding: 1% 3%;
+  font-size: 1.5em;
+  margin-left: 15%;
+  width: 75%;
+  margin-bottom: 1%;
+ background-color: #0078f0;
+}
+
+.content_2 p{
+    margin-top: 2%;
+  padding: 0 15%;
+
+  font-size: 1em;
+}
+
+.content_2 h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.content_2 ul{
+     margin-top: 2%;
+     margin-left: 18%;
+    
+     padding: 0;
+     width: 50%;
+
+}
+.content_2 li{
+  font-weight: bold;
+  padding-left: 0;
+  line-height: 2;
+}
+
+
+
+/* laptops */
+
+@media screen and (max-width: 1024px) {
+.text{
+   margin-top: 20%;
+ margin-left: 1%;
+
+
+}
+
+
+
+}
+
+/* larger screen */
+@media screen and (min-width: 1500px) {
+
+.text{
+   margin-top: 8%;
+ margin-left: 33%;
+
+
+}
+
+.text h1,h2{
+font-size: 2.2em;
+text-align: center;
+
+}
+
+
+
+  }
+
+
+
+
+  /* ipads */
+
+@media screen and (max-width: 1024px) {
+
+.text{
+   margin-top: 30%;
+ margin-left: 3%;
+
+
+}
+
+.text h1,h2{
+  font-size: 2.25em;
+text-align: center;
+
+}
+
+  }
+
+
+
+
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+ 
+
+
+
+.text{
+   margin-top: 15%;
+margin-left: 0%;
+
+}
+
+.text h1,h2{
+line-height: 1.2;
+  font-size: 1.25em;
+
+
+}
+
+
+#image{
+
+	width: 80%;
+	height: 150px;
+	margin-left: 0%;
+
+}
+.content_1{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.content_1 p{
+  margin-top: 4%;
+  padding: 0 6%;
+  font-size: 1.5em;
+}
+
+#highlight{
+  margin-top:4% ;
+  text-align: none;
+  margin-left: 1%;
+
+  padding: 1% 3%;
+  font-size: 1.5em;
+  
+  width: 100%;
+  margin-bottom: 3%;
+ background-color: #0096D0;
+}
+
+
+.content_2 p{
+    margin-top: 2%;
+  padding: 0 6%;
+
+  font-size: 1em;
+}
+
+
+
+.content_2 ul{
+     margin-top: 2%;
+     margin-left: 10%;
+    
+     padding: 0;
+     width: 80%;
+
+}
+
+.content_2 li{
+text-align: justify;
+  text-justify: inter-word;
+
+}
+
+
+}
+
+</style>
+
+
+<body>
+
+
+
+
+<!------- carousel Starts Here ---------------------------->
+
+
+
+  
+   <div class="container">
+
+
+
+   <div class="text">
+
+   	<img src="img.jpg" style="top: 0;">
+
+   <b> <h2 >International Conference on Machine Learning and Human-Computer Interaction (MLHCI 2023),<br> 1-2 February 2023</h2></b>
+<br>
+  <h2>Organized by</h2>
+  <br>
+
+    <br>
+    <h2>
+Faculty of Computer Science Applications, DAV University, Jalandhar, Punjab (India))</h2>
+    <br>
+<p><a href="www.davuniversity.org">www.davuniversity.org</a></p>
+    </strong>
+
+
+ 
+
+
+  
+</div>
+
+</div>
+<!------ carousel Ends Here ---------------------------->
+
+
+<div class="content_1">
+   <h1 > </h1>
+
+</div>
+
+<div class="content_2" id="submission">
+ 
+
+
+<h3 id="highlight"><b>About The Conference</b></h3>
+   <p>International Conference on Machine Learning and Human-Computer Interaction (MLHCI 2023), a Two Days International Level Conference on Machine Learning and Human-Computer Interaction invite original and quality contributions from researchers, academicians, and practitioners. The conference will be conducted during<b> 1-2 February 2023 </b>. The conference is open to academicians, research scholars, corporate executives, and students from the fields of Computer science or allied domains. The conference will be organized in a hybrid mode (offline conference with an option to present a paper online).</p>
+
+
+
+
+  <h3 id="highlight"><b>The Conference  Aims and Objectives</b></h3>
+
+  <p >MLHCI 2022 aims to bring together researchers and practitioners to present their latest achievements and innovations in the area of Machine Learning and Human-Computer Interaction. <br><br>
+Machine learning is a subfield of artificial intelligence (AI). The main objective of machine learning generally is to understand the structure of data and fit that data into models that can be understood and utilized by people. Machine learning is a continuously developing field. Because of this, there are some considerations to keep in mind as you work with machine learning methodologies or analyze the impact of machine learning processes. The objective of this conference is to analyze the implications and challenges faced during the implementation of machine learning in different domains. <br><br>
+HCI is a field in need of significant innovation and breakthroughs toward radically new future forms of interaction Moreover, the conference will also emphasis on the challenges and innovative topics in Human-Computer Interaction theory, methodology, and practice, including, for example, novel theoretical approaches to interaction, novel user interface concepts and technologies, novel interaction devices, UI development methods, environments and tools, multimodal user interfaces, emotions in HCI, aesthetic issues, HCI and children, evaluation methods and tools, and many others.
+
+  </p>
+
+
+  <h3 id="highlight"><b>About the Organizers</b></h3>
+
+  <p ><b>DAV University (DAVU)</b> at Jalandhar traces its roots to the legacy that has been reforming and redefining India's educational scenario for 135 years. The University is the culmination of the movement that started with the founding of the first DAV institute to propagate the ideals of the religious and social reformer Swami Dayanand Saraswati. DAV University is a multi-disciplinary institution, home to faculties of Engineering, Languages, Commerce, Business Management, Computer Applications, Sciences, Agricultural Sciences, Laws, Journalism, Education, and Physical Education. The University encourages interdisciplinary studies and believes that all areas of study can inform and enrich each other. Since DAV University aims for academic excellence, its curriculum conforms to that of the world's very best universities. This institution is set to become a global hub in the education, research, and placement of students.</p>
+
+
+
+ <h3 id="highlight"><b>Call for Contributions</b></h3>
+
+  <p >Prospective authors are invited to contribute to and help shape the conference through submissions of their research papers. High-quality research contributions describing original and unpublished results of conceptual, constructive, empirical, experimental, qualitative, or theoretical work in all areas of machine learning and computer science are cordially invited for presentation at the conference. The conference solicits contributions of extended abstracts and papers that address the theme of the conference, related to one or more of the following tracks:</p>
+
+ <h3 id="highlight"><b>Track-1 Machine Learning Algorithms</b></h3>
+
+<ul >
+	<li>Machine Learning System Design</li>
+	<li>Machine Learning Optimization</li>
+	<li>Supervised Learning</li>
+	<li>Unsupervised Learning</li>
+	<li>Reinforcement Learning</li>
+	<li>Statistical Learning</li>
+	<li>Transfer learning</li>
+	<li>	Extreme Learning Machines</li>
+	<li>	Kernel Based Learning</li>
+	<li>	Bayesian Learning</li>
+	<li>	Instruction Based Learning</li>
+<li>	Adversarial Machine Learning</li>
+
+ 
+</ul>
+
+
+
+
+ <h3 id="highlight"><b>Track-2 Deep and Transfer Learning</b></h3>
+
+<ul >
+	<li>Deep Neural Networks Optimization Algorithms</li>
+	<li>Deep Feedforward Networks</li>
+	<li>Deep Convolutional Neural Networks</li>
+	<li>Deep Recurrent Neural Networks</li>
+	<li>Sequence Modelling</li>
+	<li>Deep Generative Models</li>
+	<li>Generative Adversarial Networks</li>
+	<li>Inference Dependencies on Multi-Layered Networks</li>
+	<li>Tensors for Deep Learning</li>
+	<li>Transfer Learning</li>
+	
+
+ 
+</ul>
+
+
+
+ <h3 id="highlight"><b>Track-3 Applications of Machine Learning</b></h3>
+
+<ul >
+	<li>	Healthcare</li>
+	<li>	Agriculture</li>
+	<li>	Biomedical informatics</li>
+	<li>Computational Biology</li>	
+	<li>Transportation</li>
+	<li>Malware detection</li>	
+	<li>Mobile applications</li>	
+	<li>Disaster Management</li>
+	<li>Text Processing</li>
+		
+
+ 
+</ul>
+
+
+ <h3 id="highlight"><b>Track-4 Human Computer Interaction</b></h3>
+
+<ul >
+
+
+
+
+
+		<li>HCI Theories and Methods</li>
+	<li>Design Process Management</li>
+	<li>UX (User Experience)</li>
+	<li>DX and New Business Model</li>
+	<li>Design Thinking</li>
+	<li>Heuristics and Guidelines for Design</li>
+	<li>Agent System and Intelligent Speaker</li>
+	<li>Artificial Intelligence and IoT</li>
+	<li>Robots, Avatars, and Virtual Human</li>
+	<li>Computer vision</li>
+	<li>Natural Language Processing</li>
+	<li>Climate Science</li>
+
+
+ 
+</ul>
+
+
+
+
+ <h3 id="highlight"><b>Track-5 Human Environment Interaction</b></h3>
+
+<ul >
+
+
+
+<li>VR, AR, MR, XR and Metaverse</li>
+<li>Gesture and Eye-gaze-Based Interaction</li>
+<li>Audio-visual Artificial Environment</li>
+<li>Computer Graphics and Virtual Trip</li>
+<li>Large System User Interface</li>
+<li>Mobile HCI and Automobiles</li>
+<li>Natural User Interface</li>
+<li>Brain Machine Interface</li>
+
+
+ 
+</ul>
+
+
+ <h3 id="highlight"><b>Track-5 Human Environment Interaction</b></h3>
+
+<ul >
+
+<li>Creativity and Imagination</li>
+<li>e-Learning and Distant Learning</li>
+<li>Game Design and Game Mapping</li>
+<li>Game and Communication</li>
+<li>Gamification & Media Design</li>
+
+
+
+
+ 
+</ul>
+
+
+
+
+
+ <h3 id="highlight"><b>Guidelines for Authors</b></h3>
+
+  <p >You are invited to submit a full-text paper as per the timeline and the guidelines. The full paper will be requested for subsequent publication opportunities. Upon payment of the registration fee, your presentation will be confirmed. Please ensure your submission meets the following conference guidelines for accepting scholarly papers:</p>
+
+
+
+
+<ul >
+<li>Ensure that the title of the paper is clear and long enough to identify the topic and argument of the study.</li>
+
+<li>Ensure that your paper is free of plagiarism.</li>
+<li>All references mentioned in the text should be cited in the references should be cited in the body text for the submitted paper.</li>
+<li>You must cite the most relevant and recently published research works in the reference section to support your work.</li>
+<li>Use APA Style for citing the references in the paper (see <a href="https://apastyle.apa.org/" target="_blank">https://apastyle.apa.org/ </a>) .</li>
+<li>All tables and figures shown in the paper must be numbered, captioned, and referenced.</li>
+<li>The full paper (Maximum 8000 words) must be submitted as per the timeline if your abstract is accepted for the conference presentation.</li>
+<li>Please proofread your abstract/paper, before submission, for any grammatical mistakes, typos, spelling mistakes, and missing punctuation. You can use online free options (e.g.<a href="https://app.grammarly.com/" target="_blank"> https://app.grammarly.com/</a>) for the same.</li>
+<li>The affiliation section should appear at the bottom of the first page on the left and must include the authors’ email, affiliation, and contact details. Please also specify the corresponding author.</li>
+<li>The submitting author is responsible for obtaining the agreement of all coauthors and any consent required from sponsors before submitting a paper.</li>
+
+
+
+
+ 
+</ul>
+
+
+
+
+
+
+
+ <h3 id="highlight"><b>How to Submit</b></h3>
+
+  <p >You will receive the notification of acceptance/rejection of the abstract in your email. </p>
+  <p>The submission Web page for MLHCI 2023 is
+ <a href="https://easychair.org/conferences/?conf=mlhci2023" target="_blank"> https://easychair.org/conferences/?conf=mlhci2023</a>. You should make a
+link to this Web page from your conference Web page. If you specify
+any other Web site, your authors will be unable to submit to MLHCI
+2023.</p>
+
+ <h3 id="highlight"><b>Conference Proceedings</b></h3>
+
+  <p >The peer-reviewed conference proceedings will include the complete manuscript of all the papers submitted and presented at the conference. A limited number of full-length papers, selected based on blind peer review, will be published in an ISBN Book / ISSN Journal, after the consent and signing of the copyright form by the author/s of the selected papers. Details of the journal will be shared with the selected authors, for their consent.</p>
+
+
+
+
+ <h3 id="highlight"><b>Registration</b></h3>
+
+  <p >We encourage participants to attend the conference in offline in-person mode. However, you have the option to present in online mode, if it is not feasible for you to attend at the campus. At least one of the co-authors must register for the inclusion of the paper at the conference. </p>
+
+  <img src="fees.jpg" id="image"  style="margin-left: 15%;" width="800">
+
+<br><br>
+<h3 style="margin-left:15%">Note:</h3>
+<ul>
+	<li>Only registered author/delegate will be issued the certificate of presentation/participation.</li>	
+	<li>In online mode, the author(s) can present a paper from their places without coming to DAVU.</li>
+	<li>In offline mode, the author/s has to come to DAVU for presentation/attending the conference.</li>
+	<li>An additional 20% will be charged for on-the-spot registration.</li>
+
+</ul>
+
+<p>The registration fee should be paid through NEFT / IMPS / UPI as per the following details:</p>
+  <img src="pay.jpg" id="image" style="margin-left: 15%;" width="800">
+
+
+
+
+
+
+</div>
+
+
+
+<footer class="page-footer font-small blue" style="background-color:#0096D0 ;margin-top: 5%;">
+
+  
+  <div style="text-align: center;">
+    <br>
+
+
+    </div>
+  <br>
+  <div class="footer-copyright text-center py-3" style="border: 1px solid black; background-color: #282936;"><span style="color: white;">Design and Developed by :</span>
+    <a href="https://anmoldeepsaini08.github.io/anmoldeep/" target="_blank">Anmoldeep Saini</a>
+  </div>
+ 
+
+
+</footer>
+
+
+</body>
+
+
+
+<script >
+  $('.js-anchor-link').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+  }
+});
+</script>
+</html>
